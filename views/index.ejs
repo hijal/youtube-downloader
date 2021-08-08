@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png">
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="/stylesheets/style.css" type="text/css">
+    <title>YouTube Downloader!</title>
+  </head>
+  <body>
+    <section id="contact-form">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12 text-center">
+            <div class="title-area text-light">
+              <h1 class="font-primary">Youtube Downloader</h1>
+              <h2 class="font-secondary">
+                Download Your Favorite Youtube Video as MP4 Or Mp3</h2>
+              </h2>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-12 col-md-12 col-lg-8 offset-lg-2">
+            <div class="form-area mt-5 p-lg-4 p-3">
+              <form method="POST" action="/download">
+                <div class="row">
+                  <div
+                    class="col-sm-12 text-center text-info mb-3 font-secondary"
+                  >
+                  </div>
+                </div>
+                <dl class="row">
+                  <dt class="col-sm-4 font-weight-bold text-info font-secondary">Link</dt>
+                  <dd class="col-sm-8">
+                    <input
+                      type="text"
+                      class="form-control"
+                      name="videoUrl" required
+                      placeholder="Enter a youtube video link"
+                    />
+                  </dd>
+                  <dt class="col-sm-4 font-weight-bold text-truncate text-info font-secondary">
+                    Format
+                  </dt>
+                  <dd class="col-sm-8">
+                    <select name="format" id="" class="form-control" required>
+                      <option value="mp4">MP4</option>
+                      <option value="mp3">MP3</option>
+                    </select>
+                  </dd>
+                </dl>
+                <div class="row">
+                  <div class="col-sm-12">
+                    <button
+                      type="submit"
+                      class="btn form-control bg-info text-light font-secondary"
+                      id="dl-btn"
+                    />Download</button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="footer" class="mt-4">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12 text-center">
+            <p class="text-light">
+              © 2021 - <%- new Date().getFullYear() %>
+              <span>Designed by </span>
+              <a href="/">Hijikesh Hijal</a> 
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
+    <script src="/javascripts/app.js"></script>
+  </body>
+</html>

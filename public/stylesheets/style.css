@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css?family=Kaushan+Script|Saira&display=swap');
+
+body {
+  padding: 50px;
+  font: 14px 'Lucida Grande', Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: #00b7ff;
+}
+
+body {
+  background: #222;
+}
+.form-control {
+  border-radius: 0px;
+  border: 0px;
+}
+.font-primary {
+  font-family: 'Kaushan Script', cursive;
+}
+.font-secondary {
+  font-family: 'Saira', sans-serif;
+}
+.form-area {
+  border: 1px solid #fff;
+}
